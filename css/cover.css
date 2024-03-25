@@ -1,0 +1,126 @@
+/* this is where all of your CSS styles go */
+
+.cover {
+	width: 750px;
+	height: 1125px;
+	border: solid 1px gray;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+  background: beige;
+  overflow: hidden;
+}
+
+.redblob {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.leaf {
+  position: absolute;
+  left:4px;
+  top:0px;
+}
+
+.yellowblob {
+  position: absolute;
+  width: 115%;
+  height: 115%;
+  left:350px;
+  top:350px;
+}
+
+.greenblob {
+  position: absolute;
+  left:-15px;
+  top:0px;
+  animation: greenblob_move 1s infinite alternate;
+}
+
+@keyframes greenblob_move {
+  from { transform:rotate(0deg); }
+  to { transform:rotate(4deg); }
+}
+
+.yellowblob {
+  position: absolute;
+  left:0px;
+  right:5px;
+  top:0px;
+  animation: yellowblob_move 1s infinite alternate;
+}
+
+@keyframes yellowblob_move {
+  from { transform:rotate(0deg); }
+  to { transform:rotate(12deg); }
+}
+
+.redblob {
+  position: absolute;
+  left:-80px;
+  top:0px;
+  animation: redblob_move 1s infinite alternate;
+}
+
+@keyframes redblob_move {
+  from { transform:rotate(0deg); }
+  to { transform:rotate(5deg); }
+}
+
+.leaf {
+  position: absolute;
+  left:5px;
+  top:0px;
+  animation: leaf_move 3s infinite alternate;
+}
+
+@keyframes leaf_move {
+  from { transform:rotate(0deg); }
+  to { transform:rotate(-20deg); }
+}
+
+@font-face {
+font-family: 'anybody';
+src: url(../fonts/Anybody/Anybody-Italic-VariableFont_wdth,wght.ttf);
+
+}
+
+.anim1 {
+  font-family: 'anybody';
+  font-variation-settings: "wght" 400, "wdth" 400;
+  font-size: 90px;
+  margin: 0;
+  position: absolute;
+  left: 0px;
+  top: 500px;
+  animation: anim1 1.5s infinite alternate;
+}
+
+@keyframes anim1 {
+  from { font-variation-settings: "wght" 0, "wdth" 0; }
+  to { font-variation-settings: "wght" 500, "wdth" 125; }
+}
+
+.author {
+  font-family: 'anybody';
+  font-size: 30px;
+  position: absolute;
+  left: 0px;
+  top: 550px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
